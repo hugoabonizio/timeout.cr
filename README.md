@@ -1,6 +1,6 @@
-# Timeout.cr
+# Timeout.cr [![Build Status](https://travis-ci.org/hugoabonizio/timeout.cr.svg?branch=master)](https://travis-ci.org/hugoabonizio/timeout.cr)
 
-Declarative timeout pattern for Crystal.
+Declarative timeout pattern for Crystal using ```select``` keyword.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   timeout:
-    github: hugoabonizio/timeout
+    github: hugoabonizio/timeout.cr
 ```
 
 
@@ -38,7 +38,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/hugoabonizio/timeout/fork )
+1. Fork it ( https://github.com/hugoabonizio/timeout.cr/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
