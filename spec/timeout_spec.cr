@@ -16,4 +16,20 @@ describe Timeout do
     end
     control.should eq 2
   end
+
+  it "should execute a block after timeout" do
+    flag = false
+    timeout = Timeout.after(1.second) { flag = true }
+    flag.should eq false
+    sleep 1.5
+    flag.should eq true
+  end
+
+  it "should cancel a timeout" do
+    value = 0
+    timeout = Timeout.after(1.second) { value += 1 }
+    timeout.cancel
+    sleep 2
+    value.should eq 0
+  end
 end
